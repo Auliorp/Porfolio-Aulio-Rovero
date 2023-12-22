@@ -4,7 +4,11 @@ import {
    faReact,
    faNodeJs,
    faJs,
-   faDatabase,
+   faFacebook,
+   faXTwitter,
+   faInstagram,
+   faLinkedin,
+   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 export const dataAboutMe = [
@@ -52,7 +56,6 @@ export const dataProjects = [
          JavaScript: faJs,
          react: faReact,
          nodejs: faNodeJs,
-         database: faDatabase,
       },
       urlDeploy: "",
    },
@@ -67,5 +70,38 @@ export const dataProjects = [
       title: "Tasks web",
       technologies: { JavaScript: faJs },
       urlDeploy: "",
+   },
+];
+
+export const dataFooter = [
+   {
+      id: 1,
+      color: "#3b5998",
+      icon: faFacebook,
+      url: "https://www.facebook.com/aulioalejandro.roveroparedes",
+   },
+   {
+      id: 2,
+      color: "#55acee",
+      icon: faXTwitter,
+      url: "https://twitter.com/RoveroAulio",
+   },
+   {
+      id: 3,
+      color: "#ac2bac",
+      icon: faInstagram,
+      url: "https://www.instagram.com/aulioroverop/",
+   },
+   {
+      id: 4,
+      color: "#0082ca",
+      icon: faLinkedin,
+      url: "https://www.linkedin.com/in/auliorovero/",
+   },
+   {
+      id: 5,
+      color: "#333333",
+      icon: faGithub,
+      url: "https://github.com/Auliorp",
    },
 ];
