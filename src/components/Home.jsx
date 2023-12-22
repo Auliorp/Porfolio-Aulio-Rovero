@@ -1,7 +1,7 @@
 const HomeComponent = () => {
    return (
       <div>
-         <h1>Este es el Home</h1>
+         <h1 className=" display-1">Bienvenidos</h1>
       </div>
    );
 };
