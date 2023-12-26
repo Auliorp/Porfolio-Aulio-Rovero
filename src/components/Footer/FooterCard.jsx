@@ -1,9 +1,10 @@
-import { dataFooter } from "../shared/enums";
+import { dataFooter } from "../../shared/enums";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./footer.css"
 
 const FooterCard = () => {
    return (
-      <footer className="bg-body-tertiary text-center">
+      <footer className=" text-center">
          <div className="container p-1 pb-0">
             <section className="mb-1">
                {dataFooter.map((data) => (
