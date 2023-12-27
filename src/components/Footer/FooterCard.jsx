@@ -4,7 +4,7 @@ import "./footer.css"
 
 const FooterCard = () => {
    return (
-      <footer className=" text-center">
+      <footer className=" text-center bg-secondary">
          <div className="container p-1 pb-0">
             <section className="mb-1">
                {dataFooter.map((data) => (

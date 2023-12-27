@@ -3,7 +3,7 @@
 const WorkCard = () => {
    return (
       <div>
-         <h1>Este es la card de los trabajos</h1>
+         <h2>Este es la card de los trabajos</h2>
       </div>
    );
 };
