@@ -11,17 +11,24 @@ import {
    faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-export const dataAboutMe = [
-   {
-      resume:
-         "Soy una persona tranquila, divertida y dispuesta a salir de aventura con mis amigos.",
-      description:
-         "Me considero una persona amigable, comunicativa y respetuosa. tengo 24 años de edad y soy de nacionalidad Venezolana, viviendo actialmente el Santiago de Chile. ",
-      name: "Aulio",
-      lastName: "Rovero",
-      image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664694/Portafolio/2c361060-5d82-4e96-bd03-b87d2f654046_zjgnrx.jpg",
-   },
-];
+export const dataHome = [{
+   image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1703701646/Portafolio/portada_porfolioweb_u5pqag.png",
+   title: "Aulio Rovero",
+   SubTitle: "Soy",
+   animation1:"Desarrollador",
+   animation2: "Full Stack",
+   animation3: "Amante de la tecnologia",
+icons:{
+   linkedin: faLinkedin,
+   github: faGithub,
+   instagram: faInstagram,
+},
+urlIcons:{
+   linkedin: "https://www.linkedin.com/in/auliorovero/",
+   github: "https://github.com/Auliorp",
+   instagram: "https://www.instagram.com/aulioroverop/"
+}
+}]
 
 export const dataWorks = [
    {
@@ -70,6 +77,18 @@ export const dataProjects = [
       title: "Tasks web",
       technologies: { JavaScript: faJs },
       urlDeploy: "",
+   },
+];
+
+export const dataAboutMe = [
+   {
+      resume:
+         "Soy una persona tranquila, divertida y dispuesta a salir de aventura con mis amigos.",
+      description:
+         "Me considero una persona amigable, comunicativa y respetuosa. tengo 24 años de edad y soy de nacionalidad Venezolana, viviendo actialmente el Santiago de Chile. ",
+      name: "Aulio",
+      lastName: "Rovero",
+      image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664694/Portafolio/2c361060-5d82-4e96-bd03-b87d2f654046_zjgnrx.jpg",
    },
 ];
 
