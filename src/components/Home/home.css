@@ -1,0 +1,28 @@
+.background {
+  position: relative;
+  background-image: url("https://cocosolution.com/cms/uploads/1657204741-o_1fj38p0rk1m0oc6fjbpfda4k1a.png");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+}
+
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-top: 5vh;
+}
+
+.social-icons-container {
+}
