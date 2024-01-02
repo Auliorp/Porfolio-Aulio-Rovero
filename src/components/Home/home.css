@@ -4,6 +4,10 @@
   background-size: cover;
   background-position: center;
   height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay {
@@ -25,4 +29,22 @@
 }
 
 .social-icons-container {
+  background-color: rgba(33, 89, 209, 0.668);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  padding: 5px; /* Ajusta este valor según sea necesario para agregar espacio interno al contenedor */
+  border-radius: 10px;
+}
+
+.social-icons-container a {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

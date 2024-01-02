@@ -29,10 +29,8 @@ const HomeCard = () => {
           </h2>
           
           </div>
-          
-        </div>
-        <div className="social-icons-container" >
-            <a href="https://www.linkedin.com/in/auliorovero/" target="_blank" rel="noopener noreferrer">
+          <div className="social-icons-container" >
+        <a href="https://www.linkedin.com/in/auliorovero/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faLinkedinIn} className="cursor-pointer" size="lg" />
             </a>
             <a href="https://github.com/Auliorp" target="_blank" rel="noopener noreferrer">
@@ -42,6 +40,8 @@ const HomeCard = () => {
               <FontAwesomeIcon icon={faInstagram} className="cursor-pointer" size="lg" />
             </a>
           </div>
+        </div>
+        
       </div>
   );
 }
