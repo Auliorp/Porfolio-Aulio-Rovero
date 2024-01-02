@@ -1,12 +1,12 @@
 import WorkCard from "./WorkCard";
 
-const WorkComponent = () => {
-   return (
-      <div>
-         <h1>Este es el componente de los trabajos </h1>
+   const WorkComponent = () => {
+      return (
+         <div className="container  ">
+            <h1 className="text-dark mb-5 ">Mis experiencias laborales</h1>
          <WorkCard/>
-      </div>
-   );
-};
+         </div>
+      );
+   }; 
 
 export default WorkComponent;

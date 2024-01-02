@@ -1,6 +1,5 @@
 import "./home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-/* import { faGithub, faLinkedinIn, faInstagram } from "@fortawesome/free-brands-svg-icons"; */
 import { TypeAnimation } from "react-type-animation";
 import { dataHome } from "../../shared/enums";
 
@@ -10,14 +9,14 @@ const HomeCard = () => {
       <div className="overlay">
         {dataHome.map((item, index) => (
           <div key={index} className="container">
-            <h2 className="pt-4">
+            <h2 className="pt-4 ">
               <TypeAnimation
                 sequence={item.animations}
                 wrapper="div"
                 cursor={true}
                 repeat={Infinity}
                 speed={200}
-                style={{ fontSize: "3em", paddingLeft: "5px" }}
+                style={{ fontSize: "10vw", paddingLeft: "5px" }}
               />
             </h2>
             <div className="social-icons-container">
@@ -31,6 +30,7 @@ const HomeCard = () => {
         ))}
       </div>
     </div>
+    
   );
 }
 

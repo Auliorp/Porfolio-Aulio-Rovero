@@ -32,12 +32,14 @@ urlIcons:{
 
 export const dataWorks = [
    {
+      id:1,
       year: 2023,
       title: "A.D.I.P",
-      duration: "2 mes",
+      duration: "2 meses",
       details: `Landing page realizada para un Proyecto final del Bootcamp "Soy Henry", proyecto grupal`,
    },
    {
+      id:2,
       year: 2023,
       title: "Mentalis",
       duration: "1 mes",
