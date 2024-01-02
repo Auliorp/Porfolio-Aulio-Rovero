@@ -13,11 +13,11 @@ import {
 
 export const dataHome = [{
    image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1703701646/Portafolio/portada_porfolioweb_u5pqag.png",
-   title: "Aulio Rovero",
-   SubTitle: "Soy",
-   animation1:"Desarrollador",
-   animation2: "Full Stack",
-   animation3: "Amante de la tecnologia",
+   animations: [
+      "Bienvenido",
+      "Soy desarrollador",
+      "Full Stack",
+    ],
 icons:{
    linkedin: faLinkedin,
    github: faGithub,
