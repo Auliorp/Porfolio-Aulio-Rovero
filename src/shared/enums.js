@@ -1,4 +1,4 @@
-import {
+/* import {
    faHtml5,
    faCss3,
    faReact,
@@ -9,7 +9,13 @@ import {
    faInstagram,
    faLinkedin,
    faGithub,
-} from "@fortawesome/free-brands-svg-icons";
+} from "@fortawesome/free-brands-svg-icons"; */
+
+import { FaHtml5, FaCss3, FaReact, FaNodeJs, FaFacebookSquare,  FaLinkedin, FaGithub, FaInstagram,   } from 'react-icons/fa';
+
+import { IoLogoJavascript } from "react-icons/io"
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { SiTypescript } from "react-icons/si";
 
 export const dataHome = [{
    image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1703701646/Portafolio/portada_porfolioweb_u5pqag.png",
@@ -19,9 +25,9 @@ export const dataHome = [{
       "Full Stack",
     ],
 icons:{
-   linkedin: faLinkedin,
-   github: faGithub,
-   instagram: faInstagram,
+   linkedin: FaLinkedin,
+   github: FaGithub,
+   instagram: FaInstagram,
 },
 urlIcons:{
    linkedin: "https://www.linkedin.com/in/auliorovero/",
@@ -49,36 +55,45 @@ export const dataWorks = [
 
 export const dataProjects = [
    {
+      id:1,
       image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664809/Portafolio/adipweb_darutp.jpg",
-      title: "AD.I.P web",
+      title: "A.D.I.P web",
+      description:"Esta es la descripcion del proyecto 1",
       technologies: {
-         JavaScript: faJs,
+         JavaScript: IoLogoJavascript,
       },
       urlDeploy: "https://front-deploy-adipweb.onrender.com/#/",
    },
    {
+      id:2,
       image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664810/Portafolio/foodpi_ftcsfz.jpg",
       title: "Food PI web",
+      description:"Esta es la descripcion del proyecto 2",
       technologies: {
-         html: faHtml5,
-         css: faCss3,
-         JavaScript: faJs,
-         react: faReact,
-         nodejs: faNodeJs,
+         html: FaHtml5,
+         css: FaCss3,
+         JavaScript: IoLogoJavascript,
+         react: FaReact,
+         nodejs: FaNodeJs,
       },
       urlDeploy: "",
    },
    {
+      id:3,
       image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664816/Portafolio/rickandmorty_nlt4t6.jpg",
       title: "Rick and Morty web",
-      technologies: { JavaScript: faJs },
+      description:"Esta es la descripcion del proyecto 3",
+      technologies: { JavaScript: IoLogoJavascript },
       urlDeploy: "",
    },
    {
+      id:4,
       image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664810/Portafolio/tasks_xaezkj.jpg",
       title: "Tasks web",
-      technologies: { JavaScript: faJs },
+      description:"Esta es la descripcion del proyecto 4",
+      technologies: { JavaScript: IoLogoJavascript },
       urlDeploy: "",
+      urlRepo: "",
    },
 ];
 
@@ -98,31 +113,31 @@ export const dataFooter = [
    {
       id: 1,
       color: "#3b5998",
-      icon: faFacebook,
+      icon: FaFacebookSquare,
       url: "https://www.facebook.com/aulioalejandro.roveroparedes",
    },
    {
       id: 2,
       color: "#55acee",
-      icon: faXTwitter,
+      icon: FaSquareXTwitter,
       url: "https://twitter.com/RoveroAulio",
    },
    {
       id: 3,
       color: "#ac2bac",
-      icon: faInstagram,
+      icon: FaInstagram,
       url: "https://www.instagram.com/aulioroverop/",
    },
    {
       id: 4,
       color: "#0082ca",
-      icon: faLinkedin,
+      icon: FaLinkedin,
       url: "https://www.linkedin.com/in/auliorovero/",
    },
    {
       id: 5,
       color: "#333333",
-      icon: faGithub,
+      icon: FaGithub,
       url: "https://github.com/Auliorp",
    },
 ];

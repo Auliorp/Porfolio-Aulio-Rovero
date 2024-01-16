@@ -1,9 +1,10 @@
 import ProjectCard from "./ProjectCard";
+
 const ProjectComponent = () => {
    return (
-      <div>
-         <h1>Este es el componente de los Proyectos</h1>
-         <ProjectCard />
+      <div className="container">
+         <h1 className="text-dark mb-5 ">Mis proyectos realizados</h1>
+         <ProjectCard/>
       </div>
    );
 };

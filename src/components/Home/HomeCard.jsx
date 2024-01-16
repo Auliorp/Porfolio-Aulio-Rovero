@@ -22,8 +22,8 @@ const HomeCard = () => {
             <div className="social-icons-container">
               {Object.keys(item.icons).map((icon, iconIndex) => (
                 <a key={iconIndex} href={item.urlIcons[icon]} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon icon={item.icons[icon]} className="cursor-pointer" size="lg" />
-                </a>
+                {item.icons[icon]({ size: "1em", className: "cursor-pointer" })}
+              </a>
               ))}
             </div>
           </div>

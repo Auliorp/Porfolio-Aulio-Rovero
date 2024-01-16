@@ -1,5 +1,4 @@
 import { dataFooter } from "../../shared/enums";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./footer.css"
 
 const FooterCard = () => {
@@ -18,7 +17,7 @@ const FooterCard = () => {
                      target="_blank"
                      rel="noreferrer"
                   >
-                     <FontAwesomeIcon icon={data.icon} />
+                     {data.icon({ size: "1em", className: "cursor-pointer" })}
                   </a>
                ))}
             </section>
