@@ -1,0 +1,10 @@
+.icon-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-row span {
+  margin: 2px; /* Puedes ajustar este valor según tu preferencia para espaciar los iconos */
+}

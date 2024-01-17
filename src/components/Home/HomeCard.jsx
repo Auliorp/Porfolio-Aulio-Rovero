@@ -1,5 +1,4 @@
 import "./home.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { TypeAnimation } from "react-type-animation";
 import { dataHome } from "../../shared/enums";
 
@@ -19,6 +18,7 @@ const HomeCard = () => {
                 style={{ fontSize: "10vw", paddingLeft: "5px" }}
               />
             </h2>
+            
             <div className="social-icons-container">
               {Object.keys(item.icons).map((icon, iconIndex) => (
                 <a key={iconIndex} href={item.urlIcons[icon]} target="_blank" rel="noopener noreferrer">
