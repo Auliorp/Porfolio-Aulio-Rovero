@@ -1,7 +1,7 @@
 const ContactComponent = () => {
    return (
-      <div id="contact">
-         <h1>Formulario</h1>
+      <div id="contact"  className="container">
+         <h1 className="text-dark mb-5 ">Formulario</h1>
       </div>
    );
 };

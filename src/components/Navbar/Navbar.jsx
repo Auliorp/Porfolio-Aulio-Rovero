@@ -22,14 +22,14 @@ const NavbarComponent = () => {
                   <a className="nav-link active" aria-current="page" href="#">
                      Principal
                   </a>
+                  <a className="nav-link" href="#aboutMe">
+                     Sobre mi
+                  </a>
                   <a className="nav-link" href="#home">
                      Trabajos
                   </a>
                   <a className="nav-link" href="#project">
                      Proyectos
-                  </a>
-                  <a className="nav-link" href="#aboutMe">
-                     Sobre mi
                   </a>
                   <a className="nav-link" href="#contact">
                      Contacto

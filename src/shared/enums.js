@@ -99,7 +99,7 @@ export const dataProjects = [
       technologies: { 
          typeScript: SiTypescript,
          JavaScript: IoLogoJavascript,
-         nodeJs: FaNodeJs,
+         nodeJs: FaNodeJs, 
          tailwind: SiTailwindcss,
          css: FaCss3,
          html: FaHtml5,
