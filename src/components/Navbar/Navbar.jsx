@@ -1,3 +1,4 @@
+
 const NavbarComponent = () => {
    return (
       <nav className="navbar navbar-expand-lg bg-secondary">
@@ -19,16 +20,19 @@ const NavbarComponent = () => {
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                <div className="navbar-nav ms-auto">
                   <a className="nav-link active" aria-current="page" href="#">
-                     Home
+                     Principal
                   </a>
-                  <a className="nav-link" href="#">
-                     Work
+                  <a className="nav-link" href="#home">
+                     Trabajos
                   </a>
-                  <a className="nav-link" href="#">
-                     AboutMe
+                  <a className="nav-link" href="#project">
+                     Proyectos
                   </a>
-                  <a className="nav-link" href="#">
-                     Contact
+                  <a className="nav-link" href="#aboutMe">
+                     Sobre mi
+                  </a>
+                  <a className="nav-link" href="#contact">
+                     Contacto
                   </a>
                </div>
             </div>

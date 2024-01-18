@@ -1,0 +1,6 @@
+.img-custom-size {
+  width: 60%; /* Puedes ajustar este valor según tus necesidades */
+  height: auto; /* Esto mantiene la proporción original de la imagen */
+  display: block;
+  margin: 0 auto;
+}

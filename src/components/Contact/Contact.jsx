@@ -1,7 +1,7 @@
 const ContactComponent = () => {
    return (
-      <div>
-         <h1>Aca va el Formulario para contactarse conmigo</h1>
+      <div id="contact">
+         <h1>Formulario</h1>
       </div>
    );
 };

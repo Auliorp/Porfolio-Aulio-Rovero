@@ -81,6 +81,8 @@ export const dataProjects = [
       description:"En este proyecto pude trabajar del lado del desarrollo Back-end junto a un maravilloso equipo con el fin de realizar el proyecto final para asi graduarnos como desarrolladores full stack en el bootcamp SoyHenry.",
       technologies: {
          typeScript: SiTypescript,
+         html: FaHtml5,
+         css: FaCss3,
          nodeJs: FaNodeJs,
          nestJs: SiNestjs,
          postgresql: SiPostgresql,
