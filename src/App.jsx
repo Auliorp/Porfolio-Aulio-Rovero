@@ -16,7 +16,7 @@ const App = () => {
          <div  className="content ">
          <NavbarComponent />
          <HomeComponent />
-         <hr  />
+         
          <AboutMeComponent />
          <hr  />
          <WorkComponent />
