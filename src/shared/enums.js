@@ -115,15 +115,37 @@ export const dataProjects = [
 
 export const dataAboutMe = [
    {
-      resume:
-         "Soy una persona tranquila, divertida y dispuesta a salir de aventura con mis amigos.",
+      title: "<Aulio Rovero/>",
+      altDescription: "Foto de perfil Aulio Rovero",
       description:
-         "Me considero una persona amigable, comunicativa y respetuosa. tengo 24 años de edad y soy de nacionalidad Venezolana, viviendo actialmente el Santiago de Chile. ",
-      name: "Aulio",
-      lastName: "Rovero",
-      image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664694/Portafolio/2c361060-5d82-4e96-bd03-b87d2f654046_zjgnrx.jpg",
+         "Me considero una persona apasionada, comunicativa y respetuosa. tengo 25 años de edad y soy de nacionalidad Venezolana, viviendo actialmente el Santiago de Chile. Amante del arte y las aventuras, me gusta realizar senderismo y compartir con mis amigos. Aca te dejo algunas fotos de mis paseos.",
+      imageProfile: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664694/Portafolio/2c361060-5d82-4e96-bd03-b87d2f654046_zjgnrx.jpg",
    },
 ];
+
+export const dataHiking = [
+   {
+      id: 1,
+      title: "Aguas de San Ramon",
+      altDescription: "Foto paisaje Aguas de San Ramon",
+      image:"https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705619395/Portafolio/IMG_20220814_120810_ykjod3.jpg",
+      url:"https://www.google.cl/maps/place/Salto+de+Apoquindo/@-33.4415177,-70.4597778,14z/data=!4m14!1m7!3m6!1s0x9662cdd0eb3179ad:0x103dffb8668a0b77!2sParque+Natural+Aguas+de+Ram%C3%B3n!8m2!3d-33.433615!4d-70.5191722!16s%2Fg%2F1hc0g5tx0!3m5!1s0x9662cd6c04071ba9:0xe3ab49d9b58976e3!8m2!3d-33.4418755!4d-70.4608781!16s%2Fm%2F0fq19bx?entry=ttu"
+   },
+   {
+      id: 2,
+      title:"Cerro el Carbon",
+      altDescription: "Foto paisaje Cerro el Carbon",
+      image:"https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603848/Portafolio/9e8d3f48-4765-4e56-a849-0abafc3e3fd8_encbaq.jpg",
+      url:"https://www.google.cl/maps/place/Cerro+El+Carb%C3%B3n/@-33.3636639,-70.6010321,15.96z/data=!4m6!3m5!1s0x9662c892868e8423:0xd42d6cc96afe7a75!8m2!3d-33.362736!4d-70.600555!16s%2Fg%2F11dx92nt1q?entry=ttu",
+   },
+   {
+      id: 3, 
+      title:"Cerro Manquehue",
+      altDescription: "Foto paisaje Cerro Manquehue",
+      image:"https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603838/Portafolio/41d7b577-d5a3-40b6-97b8-40bbe5d23e09_m07tok.jpg",
+      url:"https://www.google.cl/maps/place/Cerro+Manquehue/@-33.3506084,-70.5836027,16.5z/data=!4m14!1m7!3m6!1s0x9662c8f8e4af6275:0x80215c167e628c67!2sCerro+Manquehue!8m2!3d-33.3508333!4d-70.5822222!16s%2Fg%2F120jr2q9!3m5!1s0x9662c8f8e4af6275:0x80215c167e628c67!8m2!3d-33.3508333!4d-70.5822222!16s%2Fg%2F120jr2q9?entry=ttu",
+   }
+]
 
 export const dataFooter = [
    {
