@@ -21,8 +21,8 @@ const AboutMeCard = () => {
     <div>
       <div id="carouselExampleSlidesOnly" className="carousel slide img-carousel rounded" data-bs-ride="carousel" data-bs-interval="4000">
         <div className="carousel-inner">
-          {dataHiking.map((hiking, index) => (
-            <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+          {dataHiking.map((hiking) => (
+            <div key={hiking.id} className={`carousel-item ${hiking.id === 0 ? 'active' : ''}`}>
               <img  src={hiking.image}  className="d-block w-100 text-dark" alt={hiking.altDescription} />
               <a href={hiking.url}
               target="_blank" 
