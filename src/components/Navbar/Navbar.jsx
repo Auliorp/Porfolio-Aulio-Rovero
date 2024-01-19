@@ -25,7 +25,7 @@ const NavbarComponent = () => {
                   <a className="nav-link" href="#aboutMe">
                      Sobre mi
                   </a>
-                  <a className="nav-link" href="#home">
+                  <a className="nav-link" href="#work">
                      Trabajos
                   </a>
                   <a className="nav-link" href="#project">
