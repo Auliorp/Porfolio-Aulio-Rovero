@@ -8,3 +8,9 @@
 .icon-row span {
   margin: 2px; /* Puedes ajustar este valor según tu preferencia para espaciar los iconos */
 }
+
+.centered-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
