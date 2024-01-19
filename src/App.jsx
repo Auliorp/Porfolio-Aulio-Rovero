@@ -6,7 +6,7 @@ import FooterComponent from "./components/Footer/Footer";
 import HomeComponent from "./components/Home/Home";
 import NavbarComponent from "./components/Navbar/Navbar";
 import ProjectComponent from "./components/Project/Project";
-import WorkComponent from "./components/Work/work";
+import WorkComponent from "./components/Work/Work";
 
 const App = () => {
    //aca agregamos los componentes que se van a renderizar.
