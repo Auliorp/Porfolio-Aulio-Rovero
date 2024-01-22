@@ -28,24 +28,15 @@ const AboutMeCard = () => {
   <div className="carousel-inner">
     <div className="carousel-item active">
       <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705619395/Portafolio/IMG_20220814_120810_ykjod3.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-        <h5 className="card-title">First slide label</h5>
-        <p className="card-text">Some representative placeholder content for the first slide.</p>
-      </div>
+      
     </div>
     <div className="carousel-item">
       <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603848/Portafolio/9e8d3f48-4765-4e56-a849-0abafc3e3fd8_encbaq.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
+    
     </div>
     <div className="carousel-item">
       <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603838/Portafolio/41d7b577-d5a3-40b6-97b8-40bbe5d23e09_m07tok.jpg" className="d-block w-100" alt="..."/>
-      <div className="carousel-caption d-none d-md-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
+     
     </div>
   </div>
   <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -57,6 +48,11 @@ const AboutMeCard = () => {
     <span className="visually-hidden">Next</span>
   </button>
 </div>
+<a href=""
+              target="_blank" 
+              rel="noopener noreferrer"
+               className="card-text mb-2 text-decoration-none ">
+                <FaMapMarkerAlt className="mx-1 bs-primary" /><small className="bs-primary">Descripcion</small></a>
     </div>
     
   </div>
