@@ -29,8 +29,8 @@ const AboutMeCard = () => {
     <div className="carousel-item active">
       <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705619395/Portafolio/IMG_20220814_120810_ykjod3.jpg" className="d-block w-100" alt="..."/>
       <div className="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5 className="card-title">First slide label</h5>
+        <p className="card-text">Some representative placeholder content for the first slide.</p>
       </div>
     </div>
     <div className="carousel-item">
