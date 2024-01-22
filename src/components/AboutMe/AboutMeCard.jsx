@@ -19,23 +19,21 @@ const AboutMeCard = () => {
     </div>
     {/* Carousel */}
     <div>
-      <div id="carouselExampleSlidesOnly" className="carousel slide img-carousel rounded" data-bs-ride="carousel" data-bs-interval="4000">
-        <div className="carousel-inner">
-          {dataHiking.map((hiking) => (
-            <div key={hiking.id} className={`carousel-item ${hiking.id === 1 ? 'active' : ''}`}>  
-              <img  src={hiking.image}  className="d-block w-100 text-dark" alt={hiking.altDescription} />
-              <a href={hiking.url}
-              target="_blank" 
-              rel="noopener noreferrer"
-               className="card-text mb-2 text-decoration-none ">
-                <FaMapMarkerAlt className="mx-1 bs-primary" /><small className="bs-primary">{hiking.title}</small></a>
-            </div>
-            
-          ))}
-        </div>
-      </div>
-      
+    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel">
+  <div className="carousel-inner">
+    <div className="carousel-item active">
+      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705619395/Portafolio/IMG_20220814_120810_ykjod3.jpg" className="d-block w-100" alt="..."/>
     </div>
+    <div className="carousel-item">
+      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603848/Portafolio/9e8d3f48-4765-4e56-a849-0abafc3e3fd8_encbaq.jpg" className="d-block w-100" alt="..."/>
+    </div>
+    <div className="carousel-item">
+      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603838/Portafolio/41d7b577-d5a3-40b6-97b8-40bbe5d23e09_m07tok.jpg" className="d-block w-100" alt="..."/>
+    </div>
+  </div>
+</div>
+    </div>
+
   </div>
 );
 };
