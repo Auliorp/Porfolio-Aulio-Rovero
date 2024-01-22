@@ -115,7 +115,7 @@ export const dataProjects = [
 
 export const dataAboutMe = [
    {
-      title: "<Aulio Rovero/>",
+      title: "Hola Mi nombre es Aulio Rovero",
       altDescription: "Foto de perfil Aulio Rovero",
       description:
          "Me considero una persona apasionada, comunicativa y respetuosa. tengo 25 años de edad y soy de nacionalidad Venezolana, viviendo actialmente el Santiago de Chile. Amante del arte y las aventuras, me gusta realizar senderismo y compartir con mis amigos. Aca te dejo algunas fotos de mis paseos.",
@@ -179,3 +179,34 @@ export const dataFooter = [
       url: "https://github.com/Auliorp",
    },
 ];
+
+export const dataNavbar = [{
+   title: "<Aulio Rovero/>",
+   components:[
+      {
+         id: 1,
+componentsName: "Principal",
+componentsId:"#",
+      },
+      {
+         id: 2,
+componentsName: "Sobre mi",
+componentsId:"#aboutMe",
+      },
+      {
+         id: 3,
+componentsName: "Trabajos",
+componentsId:"#work",
+      },
+      {
+         id: 4,
+componentsName: "Proyectos",
+componentsId:"#project",
+      },
+      {
+         id: 5,
+componentsName: "Contactame",
+componentsId:"#contact",
+      },
+   ]
+}]

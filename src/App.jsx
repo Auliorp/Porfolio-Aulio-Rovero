@@ -14,9 +14,8 @@ const App = () => {
    
       <>
          <div  className="content ">
-         <NavbarComponent />
+         <NavbarComponent/>
          <HomeComponent />
-         
          <AboutMeComponent />
          <hr  />
          <WorkComponent />
