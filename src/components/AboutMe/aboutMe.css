@@ -8,13 +8,10 @@
 }
 
 .img-carousel {
-  width: 90%;
+  width: 80%;
   height: auto;
   display: block;
   margin: auto;
   margin-bottom: 20px;
-}
-
-div.img-carousel img {
   border-radius: 5px;
 }

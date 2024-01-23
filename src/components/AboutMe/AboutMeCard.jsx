@@ -18,47 +18,52 @@ const AboutMeCard = () => {
       ))}
     </div>
     {/* Carousel */}
+    
     <div>
-    <div id="carouselExampleCaptions" className="carousel slide">
-  <div className="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div className="carousel-inner">
-    <div className="carousel-item active">
-      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705619395/Portafolio/IMG_20220814_120810_ykjod3.jpg" className="d-block w-100" alt="..."/>
-      
+      <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+        <div className="carousel-indicators bg-dark-subtle rounded">
+          {dataHiking.map((hiking, index) => (
+            <button
+              key={hiking.id}
+              type="button"
+              data-bs-target="#carouselExampleCaptions "
+              data-bs-slide-to={index}
+              className={index === 0 ? 'active' : ''}
+              aria-current={index === 0 ? 'true' : undefined}
+              aria-label={`Slide ${index + 1}`}
+            ></button>
+          ))}
+        </div>
+        <div className="carousel-inner">
+          {dataHiking.map((hiking, index) => (
+            <div key={hiking.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+              <img src={hiking.image} className="d-block w-90 img-carousel" alt={hiking.altDescription} />
+              <div className="bg-dark " >
+        <a
+          href={hiking.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="card-text mb-1 text-decoration-none"
+        >
+          <FaMapMarkerAlt className="mx-1 bs-primary " />
+          <small className="bs-primary ">{hiking.title}</small>
+        </a>
+      </div>
+            </div>
+          ))}
+        </div>
+        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span className="carousel-control-prev-icon bg-dark me-3" aria-hidden="true"></span>
+          <span className="visually-hidden ">Previous</span>
+        </button>
+        <button className="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span className="carousel-control-next-icon bg-dark ms-3" aria-hidden="true"></span>
+          <span className="visually-hidden ">Next</span>
+        </button>
+      </div>
     </div>
-    <div className="carousel-item">
-      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603848/Portafolio/9e8d3f48-4765-4e56-a849-0abafc3e3fd8_encbaq.jpg" className="d-block w-100" alt="..."/>
-    
     </div>
-    <div className="carousel-item">
-      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1705603838/Portafolio/41d7b577-d5a3-40b6-97b8-40bbe5d23e09_m07tok.jpg" className="d-block w-100" alt="..."/>
-     
-    </div>
-  </div>
-  <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Previous</span>
-  </button>
-  <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-    <span className="visually-hidden">Next</span>
-  </button>
-</div>
-<a href=""
-              target="_blank" 
-              rel="noopener noreferrer"
-               className="card-text mb-2 text-decoration-none ">
-                <FaMapMarkerAlt className="mx-1 bs-primary" /><small className="bs-primary">Descripcion</small></a>
-    </div>
-    
-  </div>
 );
 };
       
-
-
 export default AboutMeCard;
