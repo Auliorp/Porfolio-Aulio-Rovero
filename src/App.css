@@ -3,3 +3,8 @@
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
+
+body {
+  background: linear-gradient(to right, #9fe8ebdf, #479ed5d5, #2a23f6ae);
+  margin: 0; /* Asegúrate de quitar el margen predeterminado del cuerpo para que el degradado cubra todo el fondo */
+}

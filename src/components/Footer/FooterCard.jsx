@@ -10,7 +10,7 @@ const FooterCard = () => {
                   <a
                      key={data.id}
                      data-mdb-ripple-init
-                     className="btn text-white btn-floating m-1"
+                     className="btn btn-floating m-1 text-light"
                      style={{ backgroundColor: data.color }}
                      href={data.url}
                      role="button"
@@ -24,12 +24,12 @@ const FooterCard = () => {
          </div>
          {/* Copyright */}
          <div
-            className="text-center p-1"
+            className="text-center p-1 text-light"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
          >
             © 2023 Copyright:
             <a
-               className="text-body"
+               className="text-light"
                href="https://www.linkedin.com/in/auliorovero/"
                target="_blank"
                rel="noreferrer"

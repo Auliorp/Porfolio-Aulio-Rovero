@@ -7,7 +7,7 @@ const AboutMeCard = () => {
     <div>
      <div>
       {dataAboutMe.map((about, index) => (
-        <div key={index} className="card mb-3">
+        <div key={index} className="card mb-3 ">
           <h2 className="card-title mt-4">{about.title}</h2>
           <img src={about.imageProfile} className="card-img-top img-custom-size" alt={about.altDescription} />
           <div className="card-body">
@@ -21,7 +21,7 @@ const AboutMeCard = () => {
     
     <div>
       <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators bg-dark-subtle rounded">
+        <div className="carousel-indicators  rounded">
           {dataHiking.map((hiking, index) => (
             <button
               key={hiking.id}
@@ -38,14 +38,14 @@ const AboutMeCard = () => {
           {dataHiking.map((hiking, index) => (
             <div key={hiking.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <img src={hiking.image} className="d-block w-90 img-carousel" alt={hiking.altDescription} />
-              <div className="bg-dark " >
+              <div className="" >
         <a
           href={hiking.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="card-text mb-1 text-decoration-none"
+          className="card-text text-decoration-none text-white fs-6 "
         >
-          <FaMapMarkerAlt className="mx-1 bs-primary " />
+          <FaMapMarkerAlt className="mx-2 bs-primary " />
           <small className="bs-primary ">{hiking.title}</small>
         </a>
       </div>
@@ -53,11 +53,11 @@ const AboutMeCard = () => {
           ))}
         </div>
         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon bg-dark me-3" aria-hidden="true"></span>
+          <span className="carousel-control-prev-icon text-white me-3" aria-hidden="true"></span>
           <span className="visually-hidden ">Previous</span>
         </button>
         <button className="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span className="carousel-control-next-icon bg-dark ms-3" aria-hidden="true"></span>
+          <span className="carousel-control-next-icon text-white ms-3" aria-hidden="true"></span>
           <span className="visually-hidden ">Next</span>
         </button>
       </div>
