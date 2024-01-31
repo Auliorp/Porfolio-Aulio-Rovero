@@ -3,12 +3,12 @@ import { dataProjects } from "../../shared/enums";
 
 const ProjectCard = () => {
    return (
-      <div className="row d-flex align-items-stretch justify-content-center">
+      <div className=" row d-flex align-items-stretch justify-content-center col-11 col-md-12 col-lg-12 col-xl-12 ">
          {dataProjects.map((project) => (
-            <div className="col-md-3 centered-card" key={project.id}>
-              <div className="project-card card mb-3" style={{ width: "18rem" }}>
+            <div className="col-md-6 col-lg-4 col-xl-3 centered-card pt-3" key={project.id}>
+              <div className="project-card col-sm-12 col-md-12 card col-lg-12 col-xl-12 ">
                 <img src={project.image} className="card-img-top" alt={project.title} />
-                <div className="card-body d-flex flex-column align-items-center">
+                <div className="card-body d-flex flex-column align-items-center ">
                   <h5 className="card-title">{project.title}</h5>
                   <p className="card-text">{project.description}</p>
                   <h6>Tecnologias aplicadas:</h6>
