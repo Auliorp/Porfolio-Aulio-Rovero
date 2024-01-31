@@ -35,10 +35,10 @@ const FormCard = () => {
   };
 
   return (
-    <div>
+    <div className='w-75'>
       <form onSubmit={handleSubmit}>
         <div className="mb-1">
-          <label htmlFor="Name" className="form-label text-dark">
+          <label htmlFor="Name" className="form-label text-dark ">
             Nombre
           </label>
           <input
@@ -88,3 +88,13 @@ const FormCard = () => {
 };
 
 export default FormCard;
+
+/* <p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
+<p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p> */
