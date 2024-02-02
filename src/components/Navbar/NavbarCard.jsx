@@ -9,7 +9,7 @@ const NavbarCard = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-white p-2 text-dark bg-opacity-75 fixed-top rounded-pill mt-2 mx-2">
+    <nav className="navbar navbar-expand-lg bg-white p-2 text-dark bg-opacity-75 fixed-top rounded-4 mt-2 mx-2">
       {dataNavbar.map((data, index) => (
         <div key={index} className="container-fluid fw-semibold">
           <a className="navbar-brand" href={data.url}
