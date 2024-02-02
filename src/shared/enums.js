@@ -10,7 +10,8 @@ export const dataHome = [{
    image: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1703701646/Portafolio/portada_porfolioweb_u5pqag.png",
    animations: [
       "Bienvenido",
-      "Soy desarrollador",
+      "Soy", 
+      "Desarrollador",
       "Full Stack",
     ],
 icons:{
