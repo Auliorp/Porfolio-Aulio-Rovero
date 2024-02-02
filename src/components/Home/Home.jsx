@@ -2,7 +2,7 @@ import HomeCard from "./HomeCard";
 
 const HomeComponent = () => {
    return (
-      <div>
+      <div id="welcome">
          <HomeCard/>
       </div>
    );

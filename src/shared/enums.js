@@ -182,11 +182,12 @@ export const dataFooter = [
 
 export const dataNavbar = [{
    title: "<Aulio Rovero/>",
+   url:"https://www.linkedin.com/in/auliorovero/",
    components:[
       {
          id: 1,
 componentsName: "Principal",
-componentsId:"#",
+componentsId:"#welcome",
       },
       {
          id: 2,

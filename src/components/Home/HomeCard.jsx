@@ -4,7 +4,7 @@ import { dataHome } from "../../shared/enums";
 
 const HomeCard = () => {
   return (
-    <div id="home" className="background">
+    <div  className="background">
       <div className="overlay">
         {dataHome.map((item, index) => (
           <div key={index} className="container">
