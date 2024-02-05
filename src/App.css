@@ -8,3 +8,38 @@ body {
   background: linear-gradient(to right, #9fe8ebdf, #479ed5d5, #2a23f6ae);
   margin: 0; /* Asegúrate de quitar el margen predeterminado del cuerpo para que el degradado cubra todo el fondo */
 }
+
+.fs-n {
+  font-size: 1rem;
+}
+
+/* Tamaños de fuente responsivos */
+@media (min-width: 576px) {
+  .fs-sm-n {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .fs-md-n {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .fs-lg-n {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .fs-xl-n {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .fs-xxl-n {
+    font-size: 1.2rem;
+  }
+}

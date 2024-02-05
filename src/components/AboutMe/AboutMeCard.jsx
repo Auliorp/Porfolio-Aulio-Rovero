@@ -1,27 +1,35 @@
 import { dataAboutMe, dataHiking } from "../../shared/enums";
 import "./aboutMe.css"
+import "../../App.css"
 import { FaMapMarkerAlt } from "react-icons/fa";
 
 const AboutMeCard = () => {
    return (
     <div>
-     <div>
-      {dataAboutMe.map((about, index) => (
-        <div key={index} className="card mb-3 ">
-          <h2 className="card-title mt-4">{about.title}</h2>
-          <img src={about.imageProfile} className="card-img-top img-custom-size" alt={about.altDescription} />
-          <div className="card-body">
-            <h5 className="card-title">Un poco sobre mi:</h5>
-            <p className="card-text">{about.description}</p>
-          </div>
+<div className="d-flex justify-content-center ">
+  {dataAboutMe.map((about, index) => (
+    <div className="card mb-3" style={{maxWidth: "570px"}} key={index}>
+    <div className="row g-0 bg-dark ">
+      <div className="col-md-4 ">
+        <img src={about.imageProfile} className="img-fluid rounded " alt={about.altDescription}/>
+      </div>
+      <div className="col-md-8 bg-primary-subtle">
+        <div className="card-body">
+          <h5 className="card-title">{about.title}</h5>
+          <p className="card-text">{about.description}</p>
+          <p className="card-text"><small className="text-body-secondary">{about.descriptionTwo}</small></p>
         </div>
-      ))}
+        </div>
+      </div>
     </div>
+  ))}
+    
+</div>
     {/* Carousel */}
     
-    <div>
+    <div className="col-xl-12">
       <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-indicators  rounded">
+        <div className="carousel-indicators  rounded ">
           {dataHiking.map((hiking, index) => (
             <button
               key={hiking.id}
@@ -34,7 +42,7 @@ const AboutMeCard = () => {
             ></button>
           ))}
         </div>
-        <div className="carousel-inner">
+        <div className="carousel-inner ">
           {dataHiking.map((hiking, index) => (
             <div key={hiking.id} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
               <img src={hiking.image} className="d-block w-90 img-carousel" alt={hiking.altDescription} />
@@ -43,7 +51,7 @@ const AboutMeCard = () => {
           href={hiking.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="card-text text-decoration-none text-white fs-6 "
+          className="card-text text-decoration-none text-white fs-sm-n fs-md-n fs-lg-n fs-xxl-n"
         >
           <FaMapMarkerAlt className="mx-2 bs-primary " />
           <small className="bs-primary ">{hiking.title}</small>

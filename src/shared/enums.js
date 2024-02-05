@@ -116,10 +116,11 @@ export const dataProjects = [
 
 export const dataAboutMe = [
    {
-      title: "Hola Mi nombre es Aulio Rovero",
+      title: "Aulio Rovero",
       altDescription: "Foto de perfil Aulio Rovero",
       description:
          "Me considero una persona apasionada, comunicativa y respetuosa. tengo 25 años de edad y soy de nacionalidad Venezolana, viviendo actialmente el Santiago de Chile. Amante del arte y las aventuras, me gusta realizar senderismo y compartir con mis amigos. Aca te dejo algunas fotos de mis paseos.",
+         descriptionTwo: "Chequea mis fotos mas abajo.",
       imageProfile: "https://res.cloudinary.com/dz7ivvcp2/image/upload/v1702664694/Portafolio/2c361060-5d82-4e96-bd03-b87d2f654046_zjgnrx.jpg",
    },
 ];
