@@ -45,17 +45,29 @@ body {
   .fs-lg-icons-footer {
     font-size: 1.2rem;
   }
+  .fs-lg-text-form {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1200px) {
   .fs-xl-n {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
   .fs-xl-icons {
     font-size: 2.2rem;
   }
   .fs-xl-icons-footer {
     font-size: 1.6rem;
+  }
+  .fs-xl-text-form {
+    font-size: 1.8rem;
+  }
+  .fs-xl-button {
+    font-size: 1.4rem;
+  }
+  .fs-xl-text-project {
+    font-size: 1.4rem;
   }
 }
 

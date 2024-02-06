@@ -1,5 +1,5 @@
 import { useState } from 'react';
-
+import "../../App.css"
 const FormCard = () => {
   const [formData, setFormData] = useState({
     Name: '',
@@ -35,9 +35,9 @@ const FormCard = () => {
   };
 
   return (
-    <div className='w-75'>
+    <div className='w-75 fs-lg-n fs-xl-text-form'>
       <form onSubmit={handleSubmit}>
-        <div className="mb-1">
+        <div className="mb-1 ">
           <label htmlFor="Name" className="form-label text-dark ">
             Nombre
           </label>
@@ -66,7 +66,7 @@ const FormCard = () => {
           />
         </div>
         <div className="mb-1">
-          <label htmlFor="Description" className="form-label text-dark">
+          <label htmlFor="Description" className="form-label text-dark ">
             Descripcion
           </label>
           <textarea
@@ -79,7 +79,7 @@ const FormCard = () => {
             rows="3"
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary">
+        <button type="submit" className="btn btn-primary fs-xl-button">
           Enviar
         </button>
       </form>
@@ -89,12 +89,3 @@ const FormCard = () => {
 
 export default FormCard;
 
-/* <p class="text-start">Start aligned text on all viewport sizes.</p>
-<p class="text-center">Center aligned text on all viewport sizes.</p>
-<p class="text-end">End aligned text on all viewport sizes.</p>
-
-<p class="text-sm-end">End aligned text on viewports sized SM (small) or wider.</p>
-<p class="text-md-end">End aligned text on viewports sized MD (medium) or wider.</p>
-<p class="text-lg-end">End aligned text on viewports sized LG (large) or wider.</p>
-<p class="text-xl-end">End aligned text on viewports sized XL (extra large) or wider.</p>
-<p class="text-xxl-end">End aligned text on viewports sized XXL (extra extra large) or wider.</p> */
