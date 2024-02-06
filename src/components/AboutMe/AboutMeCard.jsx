@@ -5,19 +5,19 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const AboutMeCard = () => {
    return (
-    <div>
-<div className="d-flex justify-content-center ">
+    <div className="container">
+<div className="d-flex justify-content-center col-md-12 col-lg-11 col-xl-12">
   {dataAboutMe.map((about, index) => (
-    <div className="card mb-3" style={{maxWidth: "570px"}} key={index}>
-    <div className="row g-0 bg-dark ">
-      <div className="col-md-4 ">
-        <img src={about.imageProfile} className="img-fluid rounded " alt={about.altDescription}/>
+    <div className="card mb-4 col-md-11 col-lg-10 col-xl-10 rounded " style={{maxWidth: "800px"}} key={index}>
+    <div className="row g-0 col-md-12 col-lg-12">
+      <div className="col-md-6 col-lg-6"> 
+        <img src={about.imageProfile} className="img-fluid rounded-start " alt={about.altDescription}/>
       </div>
-      <div className="col-md-8 bg-primary-subtle">
-        <div className="card-body">
-          <h5 className="card-title">{about.title}</h5>
+      <div className="col-md-6 col-lg-6 bg-primary-subtle rounded-end position-relative">
+        <div className="card-body  fs-lg-n fs-xl-n">
+          <h2 className="card-title ">{about.title}</h2>
           <p className="card-text">{about.description}</p>
-          <p className="card-text"><small className="text-body-secondary">{about.descriptionTwo}</small></p>
+          <p className="card-text "><small className="text-body-secondary position-absolute bottom-0 start-50 translate-middle-x">{about.descriptionTwo}</small></p>
         </div>
         </div>
       </div>
