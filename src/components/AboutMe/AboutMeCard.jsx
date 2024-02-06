@@ -51,7 +51,7 @@ const AboutMeCard = () => {
           href={hiking.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="card-text text-decoration-none text-white fs-sm-n fs-md-n fs-lg-n fs-xxl-n"
+          className="card-text text-decoration-none text-white fs-sm-n fs-md-n fs-lg-n fs-xl-n"
         >
           <FaMapMarkerAlt className="mx-2 bs-primary " />
           <small className="bs-primary ">{hiking.title}</small>
