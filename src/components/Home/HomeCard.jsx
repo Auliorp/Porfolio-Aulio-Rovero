@@ -1,10 +1,11 @@
 import "./home.css";
+import "../../App.css"
 import { TypeAnimation } from "react-type-animation";
 import { dataHome } from "../../shared/enums";
 
 const HomeCard = () => {
   return (
-    <div id="home" className="background ">
+    <div id="home" className="background col-xl-12">
       <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1703701646/Portafolio/portada_porfolioweb_u5pqag.png" alt="imagen de fondo" className="home-img-background rounded-bottom"/>
       <div className="overlay">
         {dataHome.map((item, index) => (
@@ -23,7 +24,7 @@ const HomeCard = () => {
             <div className="social-icons-container ">
               {Object.keys(item.icons).map((icon, iconIndex) => (
                 <a key={iconIndex} href={item.urlIcons[icon]} target="_blank" rel="noopener noreferrer">
-                {item.icons[icon]({ size: "1em", className: "cursor-pointer" })}
+                {item.icons[icon]({  className: "cursor-pointer fs-lg-icons fs-xl-icons" })}
               </a>
               ))}
             </div>

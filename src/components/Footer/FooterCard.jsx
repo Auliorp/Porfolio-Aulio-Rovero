@@ -1,17 +1,18 @@
 import { dataFooter } from "../../shared/enums";
 import "./footer.css"
+import "../../App.css"
 
 const FooterCard = () => {
    return (
       <footer className=" text-center bg-secondary">
-         <div className="container p-1 pb-0">
+         <div className="container p-1 pb-0 ">
             <section className="mb-1">
                {dataFooter.map((data) => (
                   <a
                      key={data.id}
                      data-mdb-ripple-init
-                     className="btn btn-floating m-1 text-light"
-                     style={{ backgroundColor: data.color }}
+                     className="btn btn-floating m-1 text-light fs-icons-footer fs-lg-icons-footer fs-xl-icons-footer "
+                     style={{ backgroundColor: data.color  }}
                      href={data.url}
                      role="button"
                      target="_blank"
@@ -24,7 +25,7 @@ const FooterCard = () => {
          </div>
          {/* Copyright */}
          <div
-            className="text-center p-1 text-light"
+            className="text-center p-1 text-light  fs-text-footer fs-lg-n fs-xl-n"
             style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
          >
             © 2023 Copyright:
