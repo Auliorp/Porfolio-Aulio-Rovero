@@ -79,7 +79,7 @@ const FormCard = () => {
             rows="3"
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-primary fs-xl-button">
+        <button type="submit" className="btn btn-primary fs-xl-button mt-2">
           Enviar
         </button>
       </form>

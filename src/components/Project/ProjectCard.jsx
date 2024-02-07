@@ -30,9 +30,7 @@ const ProjectCard = () => {
                       >
                         Ver Proyecto
                       </a>
-                    ) : (
-                      <p className="text-danger">URL no disponible</p>
-                    )}
+                    ) : ""}
                     <a
                       href={project.urlRepo}
                       target="_blank"

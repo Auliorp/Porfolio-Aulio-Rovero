@@ -6,7 +6,7 @@ import { dataHome } from "../../shared/enums";
 const HomeCard = () => {
   return (
     <div id="home" className="background col-xl-12">
-      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1703701646/Portafolio/portada_porfolioweb_u5pqag.png" alt="imagen de fondo" className="home-img-background rounded-bottom"/>
+      <img src="https://res.cloudinary.com/dz7ivvcp2/image/upload/v1703701646/Portafolio/portada_porfolioweb_u5pqag.png" alt="imagen de fondo" className="home-img-background "/>
       <div className="overlay">
         {dataHome.map((item, index) => (
           <div key={index} className="container ">

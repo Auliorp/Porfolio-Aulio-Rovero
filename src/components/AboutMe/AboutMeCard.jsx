@@ -8,12 +8,12 @@ const AboutMeCard = () => {
     <div className="container">
 <div className="d-flex justify-content-center col-md-12 col-lg-11 col-xl-12">
   {dataAboutMe.map((about, index) => (
-    <div className="card mb-4 col-md-11 col-lg-10 col-xl-10 rounded " style={{maxWidth: "800px"}} key={index}>
+    <div className="card mb-4 col-md-11 col-lg-10 col-xl-10" style={{maxWidth: "800px"}} key={index}>
     <div className="row g-0 col-md-12 col-lg-12">
       <div className="col-md-6 col-lg-6"> 
-        <img src={about.imageProfile} className="img-fluid rounded-start " alt={about.altDescription}/>
+        <img src={about.imageProfile} className="img-fluid" alt={about.altDescription}/>
       </div>
-      <div className="col-md-6 col-lg-6 bg-primary-subtle rounded-end position-relative">
+      <div className="col-md-6 col-lg-6 bg-primary-subtle  position-relative">
         <div className="card-body  fs-lg-n fs-xl-n">
           <h2 className="card-title ">{about.title}</h2>
           <p className="card-text">{about.description}</p>
