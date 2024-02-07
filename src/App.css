@@ -18,6 +18,9 @@ body {
 .fs-icons-footer {
   font-size: 0.8rem;
 }
+.fs-text-Carousel {
+  font-size: 0.7rem;
+}
 
 /* Tamaños de fuente responsivos */
 @media (min-width: 576px) {
@@ -38,6 +41,9 @@ body {
 @media (min-width: 992px) {
   .fs-lg-n {
     font-size: 1.2rem;
+  }
+  .fs-lg-text-Carousel {
+    font-size: 1.3rem;
   }
   .fs-lg-icons {
     font-size: 1.6rem;
