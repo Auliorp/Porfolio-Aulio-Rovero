@@ -86,7 +86,7 @@ const FormCard = () => {
 
     if (!nameError && !mailError && !descriptionError) {
       try {
-        const response = await fetch('https://nodejs-portafolio-aulio-rovero.vercel.app/Send-mail', {
+        const response = await fetch(import.meta.env.ENDPOINT_MAIL, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
