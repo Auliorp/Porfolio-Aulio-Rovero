@@ -86,7 +86,7 @@ const FormCard = () => {
 
     if (!nameError && !mailError && !descriptionError) {
       try {
-        const response = await fetch(import.meta.env.ENDPOINT_MAIL, {
+        const response = await fetch(`https://${import.meta.env.ENDPOINT_MAIL}`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
