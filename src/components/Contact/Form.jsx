@@ -10,8 +10,6 @@ const FormCard = () => {
     Description: '',
   };
 
-  
-
   const [formData, setFormData] = useState(initialFormData);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
   const [nameError, setNameError] = useState('');
@@ -19,6 +17,8 @@ const FormCard = () => {
   const [descriptionError, setDescriptionError] = useState('');
   const [formValid, setFormValid] = useState(false);
   const [formEmpty, setFormEmpty] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false); // Nuevo estado para controlar la visibilidad del pop-up
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -27,17 +27,14 @@ const FormCard = () => {
       [name]: value,
     }));
 
-    // Validar el nombre
     if (name === 'Name') {
       validateName(value);
     }
 
-    // Validar el correo electrónico
     if (name === 'mail') {
       validateEmail(value);
     }
 
-    // Validar la descripción
     if (name === 'Description') {
       validateDescription(value);
     }
@@ -45,8 +42,8 @@ const FormCard = () => {
 
   const validateName = (name) => {
     const regex = /^[a-zA-Z ]+$/;
-    if (!regex.test(name) || name.length < 3) {
-      setNameError('El campo debe ser mayor a 3 caracteres y solo permite letras.');
+    if (!regex.test(name) || name.length < 1) {
+      setNameError('El campo no puede estar vacio y solo acepta letras');
     } else {
       setNameError('');
     }
@@ -72,7 +69,6 @@ const FormCard = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Validar si algún campo está vacío
     if (formData.Name === '' || formData.mail === '' || formData.Description === '') {
       setFormEmpty(true);
       setTimeout(() => {
@@ -83,14 +79,14 @@ const FormCard = () => {
       setFormEmpty(false);
     }
 
-    // Validar el nombre, correo electrónico y descripción antes de enviar
     validateName(formData.Name);
     validateEmail(formData.mail);
     validateDescription(formData.Description);
 
     if (!nameError && !mailError && !descriptionError) {
       try {
-        
+        setLoading(true);
+
         const response = await fetch(API_URL, {
           method: 'POST',
           headers: {
@@ -102,40 +98,51 @@ const FormCard = () => {
         const data = await response.json();
         console.log(data);
 
-        // Reiniciar el formulario
         setFormData(initialFormData);
-        // Mostrar mensaje de éxito
-        setShowSuccessMessage(true);
-        setTimeout(() => {
-          setShowSuccessMessage(false);
-        }, 5000);
+        setIsPopupOpen(true); // Mostrar el pop-up de éxito
+        setLoading(false);
       } catch (error) {
         console.error('Error al enviar el formulario:', error);
+        setLoading(false);
       }
     }
   };
 
   useEffect(() => {
-    // Verificar si hay errores de validación
-    if (nameError || mailError || descriptionError) {
+    if (nameError || mailError || descriptionError || formData.Name === '' || formData.mail === '' || formData.Description === '') {
       setFormValid(false);
     } else {
       setFormValid(true);
     }
-  }, [nameError, mailError, descriptionError]);
+  }, [nameError, mailError, descriptionError, formData]);
 
   return (
     <div className='w-75 fs-lg-n  fs-xl-text-form '>
-      {showSuccessMessage && (
-        <div className="alert alert-success text-center" role="alert">
-          ¡Los datos se han enviado correctamente!
+      {isPopupOpen && (
+        <div className="modal fade show d-flex align-items-center justify-content-center px-4" tabIndex="-1" role="dialog" style={{ display: 'block' }}>
+          <div className="modal-dialog" role="document">
+            <div className="modal-content bg-primary-subtle ">
+              <div className="modal-header text-center d-flex justify-content-center" >
+                <h2 className="modal-title  text-dark">✅✅¡Éxito!✅✅</h2>
+               
+              </div>
+              <div className="modal-body text-dark text-center">
+                <h5>Los datos se han enviado correctamente.</h5>
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-primary" onClick={() => setIsPopupOpen(false)}>Aceptar</button>
+              </div>
+            </div>
+          </div>
         </div>
       )}
+
       {formEmpty && (
         <div className="alert alert-danger text-center" role="alert">
           Por favor complete todos los campos del formulario para enviar el mensaje.
         </div>
       )}
+
       <form onSubmit={handleSubmit}>
         <div className="mb-1 ">
           <label htmlFor="Name" className="form-label text-dark ">
@@ -182,8 +189,8 @@ const FormCard = () => {
           ></textarea>
           {descriptionError && <div className="invalid-feedback">{descriptionError}</div>}
         </div>
-        <button type="submit" className="btn btn-primary fs-xl-button mt-2" disabled={!formValid}>
-          Enviar
+        <button type="submit" className={`btn btn-primary fs-xl-button mt-2 ${!formValid ? 'btn-secondary' : ''}`} disabled={!formValid || loading}>
+          {loading ? 'Enviando...' : 'Enviar'}
         </button>
       </form>
     </div>
