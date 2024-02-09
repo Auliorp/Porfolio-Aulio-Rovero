@@ -1,12 +1,16 @@
 import { useState, useEffect } from 'react';
 import "../../App.css";
 
+const API_URL= import.meta.env.VITE_ENDPOINT_MAIL
+
 const FormCard = () => {
   const initialFormData = {
     Name: '',
     mail: '',
     Description: '',
   };
+
+  
 
   const [formData, setFormData] = useState(initialFormData);
   const [showSuccessMessage, setShowSuccessMessage] = useState(false);
@@ -86,7 +90,8 @@ const FormCard = () => {
 
     if (!nameError && !mailError && !descriptionError) {
       try {
-        const response = await fetch(`https://${import.meta.env.VITE_ENDPOINT_MAIL}`, {
+        
+        const response = await fetch(API_URL, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
